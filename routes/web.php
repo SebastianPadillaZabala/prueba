@@ -16,11 +16,11 @@ use App\Http\Livewire\ShowPosts;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome-company');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+    return view('nuevo');
 })->name('dashboard');
 
 route::get('/test', ShowPosts::class);
